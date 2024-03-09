@@ -1,0 +1,37 @@
+{{>header}}
+
+
+<section class="my-orders">
+  <div class="container">
+
+    {{#if flowers}}
+
+      {{#each flowers}}
+
+        <div class="cart">
+
+          <div class="img">
+            <img src={{imageURL}} alt="" />
+          </div>
+
+          <h3>Name: <span> {{flowerName}} </span> </h3>
+          <h3>Price: <span> {{price}} </span> </h3>
+
+        </div>
+
+
+        <form class="comments" action="/flowers/comments/{{id}}" method="post">
+            <textarea placeholder="Leave your feedback..." name="feedback" id="" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+        </form>
+
+      {{/each}}
+
+    {{else}}
+
+      <h1>You have no orders</h1>
+
+    {{/if}}
+
+  </div>
+</section>

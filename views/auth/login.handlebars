@@ -1,0 +1,18 @@
+{{>header}}
+<section class="login">
+  <form action="/auth/login" method="post">
+
+    {{#if error}}
+      <div class="alert alert-danger"> {{error}} </div>
+    {{/if}}
+    
+    <label for="email">Enter your email
+      <input type="text" name="email" id="email" />
+    </label>
+    <label for="password">Enter your password
+      <input type="password" name="password" id="password" />
+    </label>
+
+    <button type="button" class="btn btn-outline-success">Login</button>
+  </form>
+</section>

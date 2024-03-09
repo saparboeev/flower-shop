@@ -1,0 +1,40 @@
+{{>header}}
+
+<section class="order-process">
+  {{#if flower}}
+
+
+    <form action="/flowers/order/{{flower.id}}" method="post">
+    {{#if error}}
+
+      <div class="alert alert-danger"> {{error}} </div>
+
+    {{/if}}
+
+      <label for="fio">Enter your FIO
+        <input type="text" name="fio" id="fio" />
+      </label>
+
+      <label for="region">Choose your region
+          <select name="region" id="region">
+              <option value="Toshkent">Toshkent</option>
+              <option value="Xorazm">Xorazm</option>
+              <option value="Namangan">Namangan</option>
+          </select>
+      </label>
+
+      <label for="phone">Enter your phone number
+        <input type="text" name="phone" id="phone" />
+      </label>
+
+      
+      <button class="bg-success" type="submit">Order</button>
+
+    </form>
+
+    {{else}}
+
+      <h1>Error occurred</h1>
+
+  {{/if}}
+</section>

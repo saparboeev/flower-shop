@@ -1,0 +1,28 @@
+{{>header}}
+
+<section class="register">
+  <form action="/auth/register" method="post">
+
+    {{#if error}}
+      <div class="alert alert-danger"> {{error}} </div>
+    {{/if}}
+
+    <label for="name">Enter your name
+      <input type="text" name="firstName" id="name" />
+    </label>
+    <label for="surname">Enter your surname
+      <input type="text" name="lastName" id="surname" />
+    </label>
+    <label for="email">Enter your email
+      <input type="email" name="email" id="email" />
+    </label>
+    <label for="password">Enter your password
+      <input type="password" name="password" id="password" />
+    </label>
+    <label for="password2">Re-enter your password
+      <input type="password" name="password2" id="password2" />
+    </label>
+
+    <button type="button" class="btn btn-outline-success">Register</button>
+  </form>
+</section>

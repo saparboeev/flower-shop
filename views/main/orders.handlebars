@@ -1,0 +1,32 @@
+{{>header}}
+
+<section class="orders">
+  <div class="container">
+
+    {{#if flowers}}
+
+      {{#each flowers}}
+        <div class="box">
+          <p class="name"> FIO of the client: <span> {{i1.fio}} </span> </p>
+          <p class="surname"> Region: <span> {{i1.region}} </span> </p>
+          <p class="number"> Phone Number: <span> {{i1.phone}} </span> </p>
+
+
+          <p class="flower"> Ordered: <span> {{i2.flowerName}} </span>  </p>
+          <p class="flower"> Price: <span> ${{i2.price}} </span>   </p>
+
+        </div>
+      {{/each}}
+
+      <form class="text-center" action="/flowers/total-trade" method="GET">
+        <button class="bg-warning">Total Trade</button>
+      </form>
+
+    {{else}}
+
+      <h1>There are no pending orders!</h1>
+
+    {{/if}}
+
+  </div>
+</section>

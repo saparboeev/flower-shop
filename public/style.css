@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+header nav {
+  width: 1000px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+a.logo {
+  text-decoration: none;
+  font-size: 26px;
+}
+
+section.register {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section.register form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.register form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+section.register form label input {
+  margin-bottom: 45px;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+section.register form button {
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+section.login {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section.login form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.login form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+section.login form label input {
+  margin-bottom: 45px;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+section.login form button {
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+section.add-flower {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section.add-flower form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.add-flower form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+section.add-flower form label input {
+  margin-bottom: 45px;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+section.add-flower form button {
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+section.edit-flower {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section.edit-flower form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.edit-flower form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+section.edit-flower form label input {
+  margin-bottom: 45px;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+section.edit-flower form button {
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+section.flowers {
+  text-align: center;
+}
+
+section.flowers .container {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-row-gap: 65px;
+  margin-top: 50px;
+}
+
+section.flowers .container .box {
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section.flowers .container .box h2 {
+  font-size: 25px;
+  padding: 0px 15px;
+  margin-top: 20px;
+}
+
+section.flowers .container .box h2 span {
+  color: red;
+}
+
+section.flowers .container .box h3 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 0px 15px;
+}
+
+section.flowers .container .box h3 span {
+  color: blue;
+}
+
+section.flowers .container .box p {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0px 15px;
+}
+
+section.flowers .container .box p span {
+  color: green;
+}
+
+section.flowers .container .box .img {
+  width: 300px;
+  height: 300px;
+}
+
+section.flowers .container .box .img img {
+  width: 100%;
+  height: 100%;
+}
+
+section.flowers .container .box .btns {
+  display: flex;
+  grid-column-gap: 10px;
+  padding: 0px 15px;
+}
+
+section.flowers .container .box .btns button {
+  border: none;
+  padding: 10px 12px;
+  color: white;
+}
+
+section.flowers .container .box .amount button {
+  font-size: 25px;
+  border: none;
+  padding: 0px 15px;
+  color: white;
+}
+
+section.flowers .container .box .amount {
+  padding-bottom: 15px;
+}
+
+button.my-orders {
+  border: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+section.my-orders {
+  width: 1000px;
+  margin: auto;
+}
+
+section.my-orders .container .cart {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: space-between;
+  border: 0.5px solid black;
+  margin-top: 50px;
+}
+
+section.my-orders .container .cart .img {
+  width: 100px;
+  height: 100px;
+}
+
+section.my-orders .container .cart .img img {
+  width: 100%;
+  height: 100%;
+}
+
+section.my-orders .container .cart button {
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin-right: 15px;
+}
+
+button {
+  border: none;
+  color: white;
+}
+
+.all-index {
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: orangered;
+  color: white;
+  font-size: 20px;
+  border-radius: 2px;
+  display: inline;
+}
+
+.bottom-link {
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-btn {
+  margin-top: 100px;
+}
+
+.order-btn button {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+section.order-process {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section.order-process form {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section.order-process form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+section.order-process form label input {
+  margin-bottom: 45px;
+  padding: 15px 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+
+section.order-process form button {
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+section.order-process form select {
+  margin-bottom: 45px;
+  font-size: 18px;
+  margin-top: 5px;
+  border: 1px solid black;
+  padding: 15px 10px;
+}
+
+section.orders .container {
+  width: 1000px;
+  margin: auto;
+}
+
+section.orders .container .box {
+  border: 1px solid black;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+}
+
+section.orders .container .box p {
+  font-weight: bold;
+}
+
+section.orders .container .box p span {
+  color: red;
+}
+
+.comments textarea {
+  height: 150px;
+  margin-top: 5px;
+  padding: 10px 15px;
+}
+
+.comments {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.comments button {
+  margin-top: 5px;
+}

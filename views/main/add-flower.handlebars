@@ -1,0 +1,24 @@
+{{>header}}
+
+<section class="add-flower">
+  <form action="/flowers/add-new-flower" method="POST">
+    <label for="url">Enter the url image for the flower
+      <input type="text" name="imageURL" id="url" />
+    </label>
+
+    <label for="name">Enter the name of the flower
+      <input type="text" name="flowerName" id="name" />
+
+    </label>
+
+    <label for="price">Enter the price for the flower
+      <input type="text" name="price" id="" />
+    </label>
+
+    <label for="desc">Enter the description for the flower
+      <input type="text" name="desc" id="desc" />
+    </label>
+
+    <button class="bg-success">Create Flower</button>
+  </form>
+</section>

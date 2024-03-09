@@ -1,0 +1,48 @@
+<header>
+  <nav>
+    <a href="/flowers" class="logo">Flower Shop</a>
+
+    <ul>
+
+      {{#if isAuthenticated}}
+
+        <li>
+          <a href="/flowers">All Flowers</a>
+        </li>
+
+        <li>
+          <a href="/flowers/add-new-flower">Add Flower</a>
+        </li>
+
+        <li>
+          <a href="/flowers/orders">Orders</a>
+        </li>
+
+        <li>
+          <a href="/auth/logout">Log Out</a>
+        </li>
+
+      {{else}}
+
+        <li>
+          <a href="/flowers/main">All Flowers</a>
+        </li>
+
+        <li>
+          <a href="/flowers/my-orders">Basket</a>
+        </li>
+
+        <li>
+          <a href="/flowers/all-orders">My Orders</a>
+        </li>
+
+        <li>
+          <a href="/auth/login">Login</a>
+        </li>
+        <li>
+          <a href="/auth/register">Register</a>
+        </li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>

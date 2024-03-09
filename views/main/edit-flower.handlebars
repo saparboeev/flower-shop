@@ -1,0 +1,20 @@
+{{>header}}
+
+<section class="edit-flower">
+  <form action="/flowers/edit-flower/{{flower.id}}" method="POST">
+
+    <label for="name">Edit the name of the flower
+      <input type="text" name="flowerName" id="name" value={{flower.flowerName}} />
+    </label>
+
+    <label for="price">Edit the price for the flower
+      <input type="text" name="price" id="" value={{flower.price}} />
+    </label>
+
+    <label for="desc">Edit the description for the flower
+      <input type="text" name="desc" id="desc" value={{flower.desc}} />
+    </label>
+
+    <button>Save changes</button>
+  </form>
+</section>

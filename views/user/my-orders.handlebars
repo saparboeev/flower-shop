@@ -1,0 +1,44 @@
+{{>header}}
+
+<section class="my-orders">
+    <div class="container">
+
+        {{#if flowers}}
+
+            {{#each flowers}}
+
+                <div class="cart">
+
+                    <div class="img">
+                        <img src={{imageURL}} alt="">
+                    </div>
+
+                    <h3>Name: <span> {{flowerName}} </span> </h3>
+                    <h3>Price: <span> {{price}} </span> </h3>
+
+                    <form action="/flowers/remove-from-basket/{{id}}" method="POST">
+                        <button class="bg-danger">Remove</button>
+                    </form>
+
+                </div>
+
+                <form action="/flowers/order/{{id}}" method="GET">
+                    <div class="order-btn text-center">
+                        <button class="bg-success">Proceed</button>
+                    </div>
+                </form>
+
+            {{/each}}
+
+
+
+        {{else}}
+
+            <h1>You have no orders</h1>
+
+        {{/if}}
+
+
+
+    </div>
+</section>
